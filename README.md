@@ -9,14 +9,14 @@ You may obtain a copy of the License at
   http://www.apache.org/licenses/LICENSE-2.0
 See the file `LICENSE` for details.
 ## Contents
-*`VASP_input`
-INCAR and POTCAR for the DFT calculations to generate the dataset of Ni-Au、Cu-Ag and Pd-Au systems.
-*`GPB_code`
-The GPB-based algorithm source code.
-*`Basic_properties`
-The basic properties calculation scripts and results for Ni, Au (calculated by Ni-Au MLP), Cu, Ag, Pd and Au(calculated by Pd-Au MLP).
-*`Bimetallic_properties`
-The bimetallic properties scripts and results for Ni-Au, Cu-Ag and Pd-Au system.
-*`Melting_Point`
-Examples of MD simulations with NPT ensemble using the LAMMPS-2Aug2023 based on the MLP model.
+*`VASP_input`  
+INCAR and POTCAR for the DFT calculations to generate the dataset of Ni-Au、Cu-Ag and Pd-Au systems.  
+*`GPB_code`  
+The GPB-based algorithm source code.  
+*`Basic_properties`  
+The basic properties calculation scripts and results for Ni, Au (calculated by Ni-Au MLP), Cu, Ag, Pd and Au(calculated by Pd-Au MLP).  
+*`Bimetallic_properties`  
+The bimetallic properties scripts and results for Ni-Au, Cu-Ag and Pd-Au system.  
+*`Melting_Point`  
+Examples of MD simulations with NPT ensemble using the LAMMPS-2Aug2023 based on the MLP model.  
 
