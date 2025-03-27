@@ -15,10 +15,8 @@ INCAR and POTCAR for the DFT calculations to generate the dataset of Ni-Au、Cu-
 The GPB-based algorithm source code.   
 *`Dataset_MLP`  
 Datasets and MLPs for three systems.  
-*`Basic_properties`  
-The basic properties calculation scripts and results for Ni, Au (calculated by Ni-Au MLP), Cu, Ag, Pd and Au(calculated by Pd-Au MLP).  
-*`Bimetallic_properties`  
-The bimetallic properties scripts and results for Ni-Au, Cu-Ag and Pd-Au system.  
-*`Melting_Point`  
+*`Properties`
+The basic properties calculation scripts and results for Ni, Au (calculated by Ni-Au MLP), Cu, Ag, Pd and Au(calculated by Pd-Au MLP) and bimetallic properties scripts and results for Ni-Au, Cu-Ag and Pd-Au system.  
+*`LAMMPS_Melting_Point`  
 Examples of MD simulations with NPT ensemble using the LAMMPS-2Aug2023 based on the MLP model.  
 
