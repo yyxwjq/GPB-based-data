@@ -12,7 +12,9 @@ See the file `LICENSE` for details.
 *`VASP_input`  
 INCAR and POTCAR for the DFT calculations to generate the dataset of Ni-Au、Cu-Ag and Pd-Au systems.  
 *`GPB_code`  
-The GPB-based algorithm source code.  
+The GPB-based algorithm source code.   
+*`Dataset_MLP`  
+Datasets and MLPs for three systems.  
 *`Basic_properties`  
 The basic properties calculation scripts and results for Ni, Au (calculated by Ni-Au MLP), Cu, Ag, Pd and Au(calculated by Pd-Au MLP).  
 *`Bimetallic_properties`  
