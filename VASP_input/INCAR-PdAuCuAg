@@ -1,0 +1,73 @@
+ SYSTEM = CuAg
+####################################################################
+#Startparameter
+ PREC      = Normal    # Medium, high low
+ ISTART    = 0         # Job   : 0-new  1-cont  2-samecut
+ ICHARG    = 2         # Charge: 1-file 2-atom 10-const
+ ISPIN     = 1         # Spin polarized calculation?
+# GGA       = RP       # Using RPBE
+# VOSKOWN   = 0        # Defult: 0 PW defult: 1
+#Electronic Relaxation
+ ENCUT     = 390.0     # Cut-off energy (eV)
+ ISMEAR    = 1         # 0:Gaussian -1:Fermi -5:Tetrahedron method(for metal)
+ SIGMA     = 0.05      # Broadening (eV)the smaller the more accurate
+ NELM      = 200       # Maximum number of electronic SC steps
+# NELMIN    = 8        # Minimum number of electronic SC steps
+# NELMDL    = -8
+ EDIFF     = 1E-5      # Stopping-criterion for electronic SC-loop
+# IALGO     = 48       # Algorithm
+ ALGO     = F          # Algorithm
+# LDIAG     = T        # Sub-space diagonalisation
+ LREAL     = Auto      # Real-space projection
+# MAGMOM = 23*0.0 #magnetic
+#Mixing Parameters
+# AMIX      = 0.2
+# BMIX      = 0.0001
+# AMIX_MAG  = 0.8
+# BMIX_MAG  = 0.0001
+# MAXMIX    = -50
+# LMAXMIX   = 4
+#Writing Parameters
+ LWAVE     =  F        # Write WAVECAR
+# LVTOT     = T        # Write LOCPOT
+# LELF      = F        # Write ELFCAR
+#Density of State
+# LORBIT    = 10       # 10-TDOS and PDOS for different orbit 11-TDOS and PDOS for different orbit and independent orbit px py pz
+# NEDOS     = 3000
+#Bader charge analysis
+ LCHARG    = F
+# LAECHG    = T
+####################################################################
+#Ionic relaxation
+ ISIF      = 2         # Stress and relaxation
+# ISYM      = 0        # Symmetry off
+ POTIM     = 0.2      # 0 for CINEB
+ EDIFFG    = -0.01     # Stopping-criterion for ionic relaxation loop
+ NSW       = 200      # Number of steps for ionic relaxation loop =0 for DOS
+ IBRION    = 2         # Ionic relax: 0-MD 1-quasi-New 2-CG 3-forCINEB 5-forFreq -1-For DOS calculation and NSW=0
+# NELECT    = 92
+# NFREE    = 10        # Initial steepest desc
+####################################################################
+# LPLANE = .FALSE.
+  NPAR   = 4           # Square of NPAR is closed to the total numeber of core
+# LSCALU = .FALSE.
+# NSIM   =  10           # The total core number divided by NPAR
+#DFT+D
+# IVDW = 10            # 0-no correction 1|10-D2 11:D3 12-D3 with damping 2|20-TS
+####################
+#DFT+U
+# LDAU = .TRUE.
+# LDAUTYPE = 2         # Type for +U 1|2|4
+# LDAUL =    -1      -1      -1       2  
+# LDAUU =  0.0000  0.0000  0.0000  2.2000
+# LDAUJ =  0.0000  0.0000  0.0000  0.2000
+# Effective U value LDAUU-LDAUJ U-J
+####################
+#CINEB
+# IMAGES = 5           # can be divided evenly by the number of cores, and do not include ini and fin
+# SPRING = -5
+# ICHAIN = 0           # 0-opening of NEB 2-opening of dimer
+# LCLIMB = .TRUE.      # Opening of CINEB
+# IOPT = 3             # 0-DIIS 1-LBFGS|2-CG-accurate(EDIFF=1E-7,EDIFFG=-0.03) 3-QM 7-FIRE-coarse(EDIFF=1E-5,EDIFFG=-0.5)
+# MAXMOVE = 0.1        # For IOPT=1|2|3|4|7
+# TIMESTEP = 0.05      # For IOPT=3|7
